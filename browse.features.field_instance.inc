@@ -36,6 +36,12 @@ function browse_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -151,6 +157,12 @@ function browse_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 8,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -271,6 +283,12 @@ function browse_field_default_field_instances() {
         'type' => 'imagecache_external_image',
         'weight' => 0,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -353,6 +371,12 @@ function browse_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 4,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -469,6 +493,12 @@ function browse_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 17,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -588,6 +618,12 @@ function browse_field_default_field_instances() {
         'type' => 'image',
         'weight' => 1,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -705,6 +741,12 @@ function browse_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 7,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -768,6 +810,12 @@ function browse_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 12,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -885,6 +933,12 @@ function browse_field_default_field_instances() {
         'type' => 'i18n_taxonomy_term_reference_link',
         'weight' => 11,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -947,6 +1001,12 @@ function browse_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -1064,6 +1124,12 @@ function browse_field_default_field_instances() {
         'type' => 'i18n_taxonomy_term_reference_link',
         'weight' => 10,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1126,6 +1192,12 @@ function browse_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 13,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -1243,6 +1315,12 @@ function browse_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 6,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1358,6 +1436,12 @@ function browse_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 5,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -1475,6 +1559,12 @@ function browse_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 9,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1537,6 +1627,12 @@ function browse_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 16,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -1654,6 +1750,12 @@ function browse_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 15,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1770,6 +1872,12 @@ function browse_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 14,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1860,247 +1968,13 @@ function browse_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-item_formats-field_database'.
-  $field_instances['taxonomy_term-item_formats-field_database'] = array(
-    'bundle' => 'item_formats',
-    'default_value' => array(),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_database',
-    'label' => 'Database',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-item_formats-field_faq'.
-  $field_instances['taxonomy_term-item_formats-field_faq'] = array(
-    'bundle' => 'item_formats',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Used to reference help guides / FAQs related to current term.',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_faq',
-    'label' => 'FAQ',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-vocabulary_21-field_content_type'.
-  $field_instances['taxonomy_term-vocabulary_21-field_content_type'] = array(
-    'bundle' => 'vocabulary_21',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_content_type',
-    'label' => 'content type',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 32,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-vocabulary_21-field_front_page'.
-  $field_instances['taxonomy_term-vocabulary_21-field_front_page'] = array(
-    'bundle' => 'vocabulary_21',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_front_page',
-    'label' => 'Front page',
-    'required' => FALSE,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 33,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'taxonomy_term-vocabulary_21-field_front_page_database'.
-  $field_instances['taxonomy_term-vocabulary_21-field_front_page_database'] = array(
-    'bundle' => 'vocabulary_21',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_front_page_database',
-    'label' => 'Front Page Database',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 34,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-vocabulary_21-field_term_image'.
-  $field_instances['taxonomy_term-vocabulary_21-field_term_image'] = array(
-    'bundle' => 'vocabulary_21',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_term_image',
-    'label' => 'term_image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 1,
-      'default_image' => 0,
-      'entity_translation_sync' => FALSE,
-      'file_directory' => 'taxonomy_images',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'insert' => 0,
-        'insert_absolute' => 0,
-        'insert_class' => '',
-        'insert_default' => 'auto',
-        'insert_styles' => array(
-          'auto' => 'auto',
-          'icon_link' => 0,
-          'image' => 0,
-          'image_blog_teaser_image' => 0,
-          'image_contact_icons' => 0,
-          'image_event' => 0,
-          'image_event_image' => 0,
-          'image_event_series_image' => 0,
-          'image_event_subject_for_browse' => 0,
-          'image_large' => 0,
-          'image_medium' => 0,
-          'image_newtitle' => 0,
-          'image_opl_about_the_branch__308_x_180_' => 0,
-          'image_opl_carousel_or_featured_image__350px_x_240px_' => 0,
-          'image_square_thumbnail' => 0,
-          'image_thumbnail' => 0,
-          'link' => 0,
-        ),
-        'insert_width' => '',
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 31,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Authors');
   t('Collection Image');
-  t('Database');
   t('Details url');
   t('External Image URL');
-  t('FAQ');
   t('Format');
-  t('Front Page Database');
-  t('Front page');
   t('Genre');
   t('ISBNS');
   t('Image URL');
@@ -2112,11 +1986,8 @@ function browse_field_default_field_instances() {
   t('Publication Data');
   t('Resource type');
   t('Song Title');
-  t('Used to reference help guides / FAQs related to current term.');
   t('Zinio Description');
   t('Zinio RBID');
-  t('content type');
-  t('term_image');
 
   return $field_instances;
 }
