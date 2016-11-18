@@ -10,27 +10,21 @@
 function browse_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_authors'.
-  $field_bases['field_authors'] = array(
+  // Exported field_base: 'field_content_server_nid'.
+  $field_bases['field_content_server_nid'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_authors',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'field_name' => 'field_content_server_nid',
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'number',
     'settings' => array(
       'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_details_url'.
@@ -110,55 +104,6 @@ function browse_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_genre'.
-  $field_bases['field_genre'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_genre',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_image_collection'.
-  $field_bases['field_image_collection'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_image_collection',
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'entity_translation_sync' => array(
-        0 => 'fid',
-      ),
-      'profile2_private' => FALSE,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
-  );
-
   // Exported field_base: 'field_image_url'.
   $field_bases['field_image_url'] = array(
     'active' => 1,
@@ -176,29 +121,6 @@ function browse_field_default_field_bases() {
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_isbns'.
-  $field_bases['field_isbns'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_isbns',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -256,56 +178,76 @@ function browse_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_items_category'.
-  $field_bases['field_items_category'] = array(
+  // Exported field_base: 'field_parent_database'.
+  $field_bases['field_parent_database'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_items_category',
+    'field_name' => 'field_parent_database',
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'nid' => array(
+        0 => 'nid',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'vocabulary_21',
-          'parent' => 0,
-        ),
-      ),
-      'entity_translation_sync' => FALSE,
-      'options_list_callback' => 'i18n_taxonomy_allowed_values',
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_materials_type'.
-  $field_bases['field_materials_type'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_materials_type',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
+    'module' => 'node_reference',
     'settings' => array(
       'entity_translation_sync' => FALSE,
-      'max_length' => 255,
       'profile2_private' => FALSE,
+      'referenceable_types' => array(
+        'availability_node' => 0,
+        'blog' => 0,
+        'board_meeting' => 0,
+        'book' => 0,
+        'bookmobile_location' => 0,
+        'branch_features' => 0,
+        'branch_hours' => 0,
+        'branch_item' => 0,
+        'branch_meeting_room' => 0,
+        'calendar_entry' => 0,
+        'collections' => 0,
+        'database' => 'database',
+        'digital_signage_entry' => 0,
+        'directory_item' => 0,
+        'directory_item_multiple_location' => 0,
+        'equipment' => 0,
+        'event' => 0,
+        'featured_event' => 0,
+        'feed' => 0,
+        'forum' => 0,
+        'frequently_asked_question' => 0,
+        'help_guide' => 0,
+        'homepage_content_slider' => 0,
+        'human_book' => 0,
+        'internal_branch_information' => 0,
+        'kiosk_location' => 0,
+        'landing_page' => 0,
+        'location' => 0,
+        'mediaroom' => 0,
+        'oplpage' => 0,
+        'page' => 0,
+        'panel' => 0,
+        'pathfinder' => 0,
+        'pathfinder_resource' => 0,
+        'policy' => 0,
+        'profile' => 0,
+        'profile_blogger' => 0,
+        'profile_board_committee' => 0,
+        'site_announcement' => 0,
+        'site_text' => 0,
+        'special_event' => 0,
+        'staff_contact_form' => 0,
+        'webform' => 0,
+      ),
+      'view' => array(
+        'args' => array(),
+        'display_name' => '',
+        'view_name' => '',
+      ),
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'node_reference',
   );
 
   // Exported field_base: 'field_primary_language'.
@@ -374,6 +316,7 @@ function browse_field_default_field_bases() {
         'Freegal' => 'Freegal',
         'Hoopla' => 'Hoopla',
         'Zinio' => 'Zinio',
+        'Press Reader' => 'Press Reader',
       ),
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
@@ -381,75 +324,6 @@ function browse_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_song_title'.
-  $field_bases['field_song_title'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_song_title',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_zinio_description'.
-  $field_bases['field_zinio_description'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_zinio_description',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 765,
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_zinio_rbid'.
-  $field_bases['field_zinio_rbid'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_zinio_rbid',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
   );
 
   return $field_bases;
