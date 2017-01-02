@@ -15,7 +15,7 @@ function browse_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Browse Collections Landing Page';
   $page->admin_description = 'Events landing page';
-  $page->path = 'formats-tmp';
+  $page->path = 'collections';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -55,7 +55,7 @@ function browse_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Browse our Collections';
+  $display->title = 'Staff Picks';
   $display->uuid = 'bc193d59-069f-4455-ad1d-84c34dcdc2f7';
   $display->storage_type = 'page_manager';
   $display->storage_id = 'page_browse_collections_landing_page__panel_context_cd250250-83b2-47a5-8d02-ebabdf648bbe';
