@@ -75,7 +75,7 @@ function browse_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
-        'expire' => '-1',
+        'expire' => '7776000',
         'author' => '1',
         'authorize' => 1,
         'mappings' => array(
@@ -131,7 +131,7 @@ function browse_feeds_importer_default() {
         ),
         'insert_new' => '1',
         'update_existing' => '1',
-        'update_non_existent' => 'delete',
+        'update_non_existent' => 'skip',
         'input_format' => '2',
         'skip_hash_check' => 0,
         'bundle' => 'collections',

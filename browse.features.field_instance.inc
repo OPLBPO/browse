@@ -760,6 +760,7 @@ function browse_field_default_field_instances() {
       'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
+      'image_field_caption' => 0,
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -1292,7 +1293,7 @@ function browse_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_items_category',
     'label' => 'Items category',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,

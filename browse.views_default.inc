@@ -104,7 +104,7 @@ function browse_views_default_views() {
   $handler->display->display_options['fields']['field_resource_in_library']['table'] = 'field_data_field_resource_in_library';
   $handler->display->display_options['fields']['field_resource_in_library']['field'] = 'field_resource_in_library';
   $handler->display->display_options['fields']['field_resource_in_library']['element_label_colon'] = FALSE;
-  /* Field: Content: Unilingual resource */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_unilingual_resource']['id'] = 'field_unilingual_resource';
   $handler->display->display_options['fields']['field_unilingual_resource']['table'] = 'field_data_field_unilingual_resource';
   $handler->display->display_options['fields']['field_unilingual_resource']['field'] = 'field_unilingual_resource';
@@ -430,7 +430,7 @@ function browse_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['css_class'] = 'masonry';
+  $handler->display->display_options['css_class'] = 'masonry home-item';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'time';
@@ -532,14 +532,53 @@ function browse_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['class'] = 'item';
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: View (Views field view) */
+  $handler->display->display_options['footer']['view_field']['id'] = 'view_field';
+  $handler->display->display_options['footer']['view_field']['table'] = 'views';
+  $handler->display->display_options['footer']['view_field']['field'] = 'view_field';
+  $handler->display->display_options['footer']['view_field']['view'] = 'taxonomy_term_item_formats';
+  $handler->display->display_options['footer']['view_field']['display'] = 'embed_4';
+  $handler->display->display_options['footer']['view_field']['arguments'] = '[!tid]';
   $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'item_formats' => 'item_formats',
+    'vocabulary_30' => 0,
+    'forums' => 0,
+    'vocabulary_37' => 0,
+    'vocabulary_38' => 0,
+    'vocabulary_40' => 0,
+    'vocabulary_39' => 0,
+    'age_group' => 0,
+    'appointment_types' => 0,
+    'audience' => 0,
+    'event_series' => 0,
+    'event_type' => 0,
+    'faq_tag' => 0,
+    'imagine_space_project_streams' => 0,
+    'vocabulary_21' => 0,
+    'vocabulary_11' => 0,
+    'meeting_room_rate_classes' => 0,
+    'opening_hours_types' => 0,
+    'search_tags' => 0,
+    'subjects' => 0,
+    'vocabulary_31' => 0,
+    'vocabulary_41' => 0,
+    'vocabulary_27' => 0,
+    'vocabulary_4' => 0,
+    'vocabulary_29' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Details url */
   $handler->display->display_options['fields']['field_details_url']['id'] = 'field_details_url';
@@ -590,6 +629,15 @@ function browse_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  /* Field: Taxonomy term: Term ID */
+  $handler->display->display_options['fields']['tid']['id'] = 'tid';
+  $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['tid']['field'] = 'tid';
+  $handler->display->display_options['fields']['tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['tid']['label'] = '';
+  $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['tid']['separator'] = '';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Sticky */
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
@@ -658,6 +706,9 @@ function browse_views_default_views() {
     t('All'),
     t('%1'),
     t('Embed - Collection Items'),
+    t('View (Views field view)'),
+    t('term'),
+    t('.'),
   );
   $export['taxonomy_term_item_formats_front_page'] = $view;
 
